@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.Registered"></activity>
+        <activity android:name=".activity.FindPassword"></activity>
     </application>
 
 </manifest>
