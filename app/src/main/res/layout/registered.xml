@@ -44,7 +44,8 @@
                 android:layout_weight="2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@color/colorwhite"/>
+                android:background="@color/colorwhite"
+                android:hint="请输入手机号码"/>
             <TextView
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -64,25 +65,92 @@
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/editback"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorwhite"
+                    android:hint="请输入验证码"/>
+
+
+
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/editback"
+                android:padding="2dp">
+
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorwhite"
+                    android:hint="请输入密码"/>
+
+
+
+            </LinearLayout>
+
+
+
 
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
-
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="同意普乐猫用户注册协议"
+                android:textColor="@color/colorblue"
+                android:gravity="center|left"
+                android:textStyle="italic"/>
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:text="确定"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/radiufive"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"/>
 
         </LinearLayout>
 
