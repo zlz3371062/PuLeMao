@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/cologray"
+        >
+        <LinearLayout
+            android:id="@+id/logintitlell"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/head"
+                ></include>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colowhite">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号码"
+                android:background="@color/colowhite"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cologray"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colowhite">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+            <EditText
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="请输入密码"
+                android:background="@color/colowhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:id="@+id/loginbtnlogin"
+                android:text="登录"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colowhite"
+                android:background="@drawable/radiufive"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/cologray"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="免费注册"
+                android:gravity="center|left"
+                android:textColor="@color/coloblue"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="找回密码"
+                android:gravity="center|right"
+                android:textColor="@color/coloblue"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
