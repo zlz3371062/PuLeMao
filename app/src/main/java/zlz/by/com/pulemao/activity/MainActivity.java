@@ -25,7 +25,7 @@ public class MainActivity extends BaseActivity {
          loginbtnregistered = (TextView) findViewById(R.id.loginbtnregistered);
          loginbtnfindpassword = (TextView) findViewById(R.id.loginbtnfindpassword);
          loginbtnregistered.setOnClickListener(new myonclick());
-
+         loginbtnfindpassword.setOnClickListener(new myonclick());
 
      }
      private class  myonclick implements  View.OnClickListener{
@@ -38,9 +38,11 @@ public class MainActivity extends BaseActivity {
                    case  R.id.loginbtnregistered :
                        Intent registered = new Intent(MainActivity.this,Registered.class);
                        startActivity(registered);
+                       break;
                    case  R.id.loginbtnfindpassword :
                        Intent findpassword = new Intent(MainActivity.this,FindPassword.class);
                        startActivity(findpassword);
+                       break;
                }
          }
      }
