@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="@color/cologray"
+        android:background="@color/colorappback"
         >
         <LinearLayout
             android:id="@+id/logintitlell"
@@ -29,7 +29,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#cccccc"
+            android:background="@color/colorappback"
             >
 
         </LinearLayout>
@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:background="@color/colowhite">
+            android:background="@color/colorwhite">
             <ImageView
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -50,18 +50,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:hint="请输入手机号码"
-                android:background="@color/colowhite"/>
+                android:background="@color/colorwhite"/>
 
         </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/cologray"/>
+            android:background="@color/colorgray"/>
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colowhite">
+            android:background="@color/colorwhite">
             <ImageView
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -72,13 +72,13 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:hint="请输入密码"
-                android:background="@color/colowhite"/>
+                android:background="@color/colorwhite"/>
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#cccccc">
+            android:background="@color/colorappback">
 
         </LinearLayout>
         <LinearLayout
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textColor="@color/colowhite"
+                android:textColor="@color/colorwhite"
                 android:background="@drawable/radiufive"/>
         </LinearLayout>
     </LinearLayout>
@@ -102,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/cologray"
+        android:background="@color/colorappback"
         android:orientation="vertical" >
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -112,12 +112,13 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
             <TextView
+                android:id="@+id/loginbtnregistered"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:text="免费注册"
                 android:gravity="center|left"
-                android:textColor="@color/coloblue"/>
+                android:textColor="@color/colorblue"/>
 
             <TextView
                 android:layout_weight="1"
@@ -125,7 +126,7 @@
                 android:layout_height="match_parent"
                 android:text="找回密码"
                 android:gravity="center|right"
-                android:textColor="@color/coloblue"/>
+                android:textColor="@color/colorblue"/>
 
         </LinearLayout>
 
