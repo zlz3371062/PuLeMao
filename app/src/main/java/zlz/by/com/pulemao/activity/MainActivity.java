@@ -9,8 +9,7 @@ import zlz.by.com.pulemao.R;
 import zlz.by.com.pulemao.util.BaseActivity;
 
 public class MainActivity extends BaseActivity {
-     private TextView loginbtnback;
-     private TextView loginbtnregistered;
+     private TextView loginbtnback,loginbtnregistered,loginbtnfindpassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,7 @@ public class MainActivity extends BaseActivity {
          loginbtnback = (TextView) findViewById(R.id.headtitlelefttxt);
          loginbtnback.setVisibility(View.INVISIBLE);
          loginbtnregistered = (TextView) findViewById(R.id.loginbtnregistered);
+         loginbtnfindpassword = (TextView) findViewById(R.id.loginbtnfindpassword);
          loginbtnregistered.setOnClickListener(new myonclick());
 
 
@@ -38,6 +38,9 @@ public class MainActivity extends BaseActivity {
                    case  R.id.loginbtnregistered :
                        Intent registered = new Intent(MainActivity.this,Registered.class);
                        startActivity(registered);
+                   case  R.id.loginbtnfindpassword :
+                       Intent findpassword = new Intent(MainActivity.this,FindPassword.class);
+                       startActivity(findpassword);
                }
          }
      }
