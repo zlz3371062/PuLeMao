@@ -129,10 +129,15 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
            <ImageView
+               android:id="@+id/registerbtnyes"
+               android:padding="5dp"
                android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
+               android:layout_height="wrap_content"
+               android:src="@drawable/register_no"
+               />
             <TextView
                 android:id="@+id/registerrdbtnprotocol"
                 android:layout_width="match_parent"

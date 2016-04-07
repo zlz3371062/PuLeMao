@@ -40,11 +40,17 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:background="@color/colorwhite">
-            <ImageView
+            <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/admin"
                 />
+            </LinearLayout>
             <EditText
                 android:layout_weight="5"
                 android:layout_width="0dp"
@@ -63,10 +69,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorwhite">
-            <ImageView
+            <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/password"
+                    />
+            </LinearLayout>
                 />
             <EditText
                 android:layout_weight="5"
