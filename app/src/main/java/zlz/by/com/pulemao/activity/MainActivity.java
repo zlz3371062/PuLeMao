@@ -13,7 +13,7 @@ import zlz.by.com.pulemao.model.Screen;
 import zlz.by.com.pulemao.util.BaseActivity;
 
 public class MainActivity extends BaseActivity {
-     private TextView loginbtnback,loginbtnregistered,loginbtnfindpassword;
+     private TextView loginbtnback,loginbtnregistered,loginbtnfindpassword,loginapptitlename;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,8 @@ public class MainActivity extends BaseActivity {
 
     }
      private void init(){
-
+         loginapptitlename = (TextView) findViewById(R.id.headapptitle);
+         loginapptitlename.setText("登录");
          loginbtnback = (TextView) findViewById(R.id.headtitlelefttxt);
          loginbtnback.setVisibility(View.INVISIBLE);
          loginbtnregistered = (TextView) findViewById(R.id.loginbtnregistered);
