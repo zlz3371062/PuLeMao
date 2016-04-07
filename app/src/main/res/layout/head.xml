@@ -35,11 +35,10 @@
             android:id="@+id/headapptitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="普乐猫"
+            android:text="title"
             android:gravity="center"
             android:textColor="@color/colorwhite"
             />
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/headtitleright"
