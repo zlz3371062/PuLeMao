@@ -19,11 +19,9 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        super.apptitleset(this);
 
-        //得到屏幕长款px的方法一：
-        WindowManager wn = this.getWindowManager();
-        Screen.ScreenHeight = wn.getDefaultDisplay().getHeight();
-        Screen.ScreenWidth = wn.getDefaultDisplay().getWidth();
+
 //        得到屏幕长款px的方法二：
 //        DisplayMetrics  metrics = new DisplayMetrics();
 //        getWindowManager().getDefaultDisplay().getMetrics(metrics);
