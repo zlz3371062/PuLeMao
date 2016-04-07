@@ -11,23 +11,20 @@
         android:layout_weight="1"
         android:orientation="horizontal">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/apptitleleftimgll"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/headtitleleftimg"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
+            android:orientation="horizontal"
+            android:gravity="center">
+
+         </LinearLayout>
             <TextView
-                android:layout_weight="2"
                 android:id="@+id/headtitlelefttxt"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="返回"
                 android:gravity="center|left"
                 android:textColor="@color/colorwhite"/>
-        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
