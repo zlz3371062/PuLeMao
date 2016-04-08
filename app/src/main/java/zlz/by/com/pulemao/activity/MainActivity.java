@@ -22,7 +22,6 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.login);
         super.apptitleset(this);
 
-
 //        得到屏幕长款px的方法二：
 //        DisplayMetrics  metrics = new DisplayMetrics();
 //        getWindowManager().getDefaultDisplay().getMetrics(metrics);
