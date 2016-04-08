@@ -47,6 +47,9 @@ public class BaseActivity extends Activity{
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(Screen.ScreenWidth/25, Screen.ScreenHeight/30);
         apptitlebackimg.setImageResource(R.drawable.nav_arrow);
         apptitleleftimgll.addView(apptitlebackimg, layoutParams);
+        apptitleleftimgll.setOnClickListener(new myonclick());
+
+
     }
 
     private void setTranslucentStatus(boolean on) {
@@ -59,5 +62,22 @@ public class BaseActivity extends Activity{
             winParams.flags &= ~bits;
         }
         win.setAttributes(winParams);
+    }
+    private  class myonclick implements  View.OnClickListener{
+
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case  R.id.apptitleleftimgll:
+                    finish();
+                    break;
+
+
+            }
+
+
+
+        }
     }
 }
