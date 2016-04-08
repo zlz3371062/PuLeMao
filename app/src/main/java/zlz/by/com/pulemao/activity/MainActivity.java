@@ -14,6 +14,7 @@ import zlz.by.com.pulemao.util.BaseActivity;
 
 public class MainActivity extends BaseActivity {
      private TextView loginbtnback,loginbtnregistered,loginbtnfindpassword,loginapptitlename;
+     private TextView loginbtnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,8 @@ public class MainActivity extends BaseActivity {
          loginbtnback.setVisibility(View.INVISIBLE);
          loginbtnregistered = (TextView) findViewById(R.id.loginbtnregistered);
          loginbtnfindpassword = (TextView) findViewById(R.id.loginbtnfindpassword);
+         loginbtnlogin = (TextView) findViewById(R.id.loginbtnlogin);
+         loginbtnlogin.setOnClickListener(new myonclick());
          loginbtnregistered.setOnClickListener(new myonclick());
          loginbtnfindpassword.setOnClickListener(new myonclick());
 
@@ -55,6 +58,10 @@ public class MainActivity extends BaseActivity {
                    case  R.id.loginbtnfindpassword :
                        Intent findpassword = new Intent(MainActivity.this,FindPassword.class);
                        startActivity(findpassword);
+                       break;
+                   case  R.id.loginbtnlogin :
+                       Intent login = new Intent(MainActivity.this,BuyIng.class);
+                       startActivity(login);
                        break;
                }
          }

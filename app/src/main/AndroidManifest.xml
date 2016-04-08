@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.Registered"></activity>
-        <activity android:name=".activity.FindPassword"></activity>
+        <activity android:name=".activity.Registered" />
+        <activity android:name=".activity.FindPassword" />
+        <activity
+            android:name=".activity.BuyIng"
+            android:label="@string/title_activity_buy_ing"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorwhite"
+    android:orientation="horizontal"
+    >
+   <LinearLayout
+       android:id="@+id/buyitemfirstll"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:orientation="horizontal">
+     <ImageView
+     android:layout_weight="2"
+     android:layout_width="0dp"
+     android:layout_height="match_parent" />
+     <LinearLayout
+         android:layout_weight="3"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:padding="10dp"
+         android:orientation="vertical">
+         <TextView
+             android:layout_weight="2"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:textColor="@color/colorheadback"
+             android:text="今日必抢"
+             android:gravity="center"/>
+         <LinearLayout
+             android:id="@+id/buyitemviewll"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:orientation="vertical">
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_weight="3"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:orientation="vertical">
+             <TextView
+                 android:layout_weight="1"
+                 android:id="@+id/buyitemname"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp" />
+             <TextView
+                 android:layout_weight="1"
+                 android:id="@+id/buyitemprice"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:textColor="@color/colorheadback"
+                 android:gravity="center"
+                 />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent" />
+             <TextView
+                 android:id="@+id/buyitembuy"
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:text="立即抢"
+                 android:gravity="center"
+                 android:textColor="@color/colorwhite"
+                 android:background="@color/colorheadback"/>
+             <TextView
+                 android:layout_weight="1"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent" />
+
+         </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+     </LinearLayout>
+
+
+ </LinearLayout>
