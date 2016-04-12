@@ -2,6 +2,7 @@ package zlz.by.com.pulemao.util;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -120,7 +121,7 @@ public class HomeListAdapter extends BaseAdapter{
              convertView = LayoutInflater.from(con).inflate(R.layout.home3, null);
              LinearLayout home3 = (LinearLayout) convertView.findViewById(R.id.home3);
              LinearLayout.LayoutParams home2params = new LinearLayout.LayoutParams(
-                     ViewGroup.LayoutParams.MATCH_PARENT, Screen.ScreenHeight - dip2px(con,45) - Screen.barheight);
+                     LinearLayout.LayoutParams.MATCH_PARENT, Screen.ScreenHeight - dip2px(con,45) - Screen.barheight);
              home3.setLayoutParams(home2params);
 
          }
@@ -146,7 +147,16 @@ public class HomeListAdapter extends BaseAdapter{
                    case R.id.homesearch:
                        Intent search = new Intent(con, Search.class);
                        con.startActivity(search);
+//                      Intent i = new Intent("android.intent.action.CALL",Uri.parse("tel:10086"));
+//                       con.startActivity(i);
+//                       Intent   i = new Intent();
+//                       i.setAction(i.ACTION_DIAL);
+//                       i.setData(Uri.parse("tel:10086"));
+
+
                    break;
+
+
 //                   case :
 //                   break;
 //                   case :
