@@ -46,19 +46,30 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:visibility="invisible">
-        <ImageView
-            android:id="@+id/headtitleimg1"
+        >
+        <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            />
+            android:gravity="left|center">
         <ImageView
-            android:id="@+id/headtitleimg2"
+            android:id="@+id/headtitleimg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            />
+        </LinearLayout>
+        <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"
+            android:gravity="left|center">
+        <ImageView
+            android:id="@+id/headtitleimg2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+       </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

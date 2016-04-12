@@ -33,6 +33,7 @@ public class Home extends Activity {
     private List<View> Views = new ArrayList<View>();
     private HomeHome homecoll = new HomeHome();
     private YuXueTang yuxuetang = new YuXueTang();
+    private Mine minecoll = new Mine();
     private ImageView home1img1,home1img2,home1img3,home1img4;
     private LinearLayout  homebtnhome1,homebtnhome2,homebtnhome3,homebtnhome4;
     private View homehome,yuxuertang,car,mine;
@@ -67,7 +68,7 @@ public class Home extends Activity {
          homehome = myin.inflate(R.layout.homehome, null);
          yuxuertang = myin.inflate(R.layout.yuxuetang, null);
          car = myin.inflate(R.layout.homehome,null);
-         mine = myin.inflate(R.layout.homehome, null);
+         mine = myin.inflate(R.layout.mine, null);
         home1img1 = (ImageView) findViewById(R.id.home1img1);
         home1img2 = (ImageView) findViewById(R.id.home1img2);
         home1img3 = (ImageView) findViewById(R.id.home1img3);
@@ -153,11 +154,11 @@ private class pagechange implements ViewPager.OnPageChangeListener{
                 break;
             case  3 :
 
-
                 home1img1.setImageResource(R.drawable.tab1);
                 home1img2.setImageResource(R.drawable.tab2);
                 home1img3.setImageResource(R.drawable.tab30);
                 home1img4.setImageResource(R.drawable.tab41);
+                minecoll.init(mine,Home.this);
                 break;
         }
 

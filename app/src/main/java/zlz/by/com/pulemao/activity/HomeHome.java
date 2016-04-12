@@ -1,6 +1,8 @@
 package zlz.by.com.pulemao.activity;
 
 import android.content.Context;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
 
@@ -22,8 +24,6 @@ public class HomeHome {
         ls = (ListView) v.findViewById(R.id.homelist);
         myadapter = new HomeListAdapter(con);
         ls.setAdapter(myadapter);
-
-
 
 
 

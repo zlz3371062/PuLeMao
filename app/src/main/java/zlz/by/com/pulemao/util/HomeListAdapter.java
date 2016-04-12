@@ -1,6 +1,7 @@
 package zlz.by.com.pulemao.util;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,6 +91,12 @@ public class HomeListAdapter extends BaseAdapter{
              home1icon6.setLayoutParams(home1icon1params);
              home1icon7.setLayoutParams(home1icon1params);
              home1icon8.setLayoutParams(home1icon1params);
+             home1icon1.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+                     Log.e("zlz","i fuck u");
+                 }
+             });
 
          }else if(type == TYPE_2){
              convertView = LayoutInflater.from(con).inflate(R.layout.home2, null);
