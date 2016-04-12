@@ -20,6 +20,11 @@
         </activity>
         <activity android:name=".activity.Registered" />
         <activity android:name=".activity.FindPassword" />
+        <activity android:name=".activity.Changepassword" />
+        <activity android:name=".activity.Home"/>
+        <activity android:name=".activity.Search"/>
+            <!--android:windowSoftInputMode="adjustPan"-->
+
         <activity
             android:name=".activity.BuyIng"
             android:label="@string/title_activity_buy_ing"

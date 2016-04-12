@@ -6,6 +6,7 @@ package zlz.by.com.pulemao.model;
 public class Screen {
     public static int ScreenWidth = 0;
     public static int ScreenHeight = 0;
+    public static  int barheight = 0;
 
 
 }

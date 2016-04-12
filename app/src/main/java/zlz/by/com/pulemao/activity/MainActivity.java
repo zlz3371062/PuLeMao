@@ -21,6 +21,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         super.apptitleset(this);
+        Screen.barheight = getStatusBarHeight();
 
 //        得到屏幕长款px的方法二：
 //        DisplayMetrics  metrics = new DisplayMetrics();
@@ -59,10 +60,20 @@ public class MainActivity extends BaseActivity {
                        startActivity(findpassword);
                        break;
                    case  R.id.loginbtnlogin :
-                       Intent login = new Intent(MainActivity.this,BuyIng.class);
+                       Intent login = new Intent(MainActivity.this,Home.class);
                        startActivity(login);
                        break;
                }
          }
      }
+
+//获取状态栏高度
+    public int getStatusBarHeight() {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
+    }
 }

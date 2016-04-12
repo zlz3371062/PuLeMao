@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/home1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorheadback"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search"/>
+                <EditText
+                    android:id="@+id/homesearch"
+                    android:hint="请输入要搜索的物品"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#55ffffff"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="#55ffffff"
+                    android:background="#00000000"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/banner"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon1"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+                    
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon2"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon3"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon4"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon5"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon6"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon7"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/home1icon8"
+                        android:layout_weight="2"
+                        android:layout_width="10dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/shopping_everyday"/>
+                    <TextView
+                        android:text="每日抢购"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
