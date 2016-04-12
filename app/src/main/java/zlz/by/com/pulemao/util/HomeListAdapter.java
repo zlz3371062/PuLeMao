@@ -1,14 +1,17 @@
 package zlz.by.com.pulemao.util;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import zlz.by.com.pulemao.R;
+import zlz.by.com.pulemao.activity.Search;
 import zlz.by.com.pulemao.model.Screen;
 
 /**
@@ -20,6 +23,7 @@ public class HomeListAdapter extends BaseAdapter{
     final int TYPE_1 = 0;
     final int TYPE_2 = 1;
     final int TYPE_3 = 2;
+    private EditText searchbtn;
 
     public HomeListAdapter(Context context){
 
@@ -66,7 +70,8 @@ public class HomeListAdapter extends BaseAdapter{
          {
              convertView = LayoutInflater.from(con).inflate(R.layout.home1,
                      null);
-
+             searchbtn = (EditText) convertView.findViewById(R.id.homesearch);
+             searchbtn.setOnClickListener(new myclicklistener());
              ImageView  home1icon1 = (ImageView) convertView.findViewById(R.id.home1icon1);
              ImageView  home1icon2 = (ImageView) convertView.findViewById(R.id.home1icon2);
              ImageView  home1icon3 = (ImageView) convertView.findViewById(R.id.home1icon3);
@@ -77,6 +82,10 @@ public class HomeListAdapter extends BaseAdapter{
              ImageView  home1icon8 = (ImageView) convertView.findViewById(R.id.home1icon8);
 
              LinearLayout home1 = (LinearLayout) convertView.findViewById(R.id.home1);
+
+
+
+
 
              LinearLayout.LayoutParams home1params = new LinearLayout.LayoutParams(
                      ViewGroup.LayoutParams.MATCH_PARENT, (int)((Screen.ScreenHeight - Screen.barheight ) * 0.5) + 45);
@@ -94,9 +103,10 @@ public class HomeListAdapter extends BaseAdapter{
              home1icon1.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View v) {
-                     Log.e("zlz","i fuck u");
+                     Log.e("zlz", "i fuck u");
                  }
              });
+
 
          }else if(type == TYPE_2){
              convertView = LayoutInflater.from(con).inflate(R.layout.home2, null);
@@ -124,5 +134,26 @@ public class HomeListAdapter extends BaseAdapter{
     public static int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
+    }
+
+
+    private class myclicklistener implements View.OnClickListener{
+
+
+        @Override
+        public void onClick(View v) {
+               switch (v.getId()){
+                   case R.id.homesearch:
+                       Intent search = new Intent(con, Search.class);
+                       con.startActivity(search);
+                   break;
+//                   case :
+//                   break;
+//                   case :
+//                   break;
+
+
+               }
+        }
     }
 }
