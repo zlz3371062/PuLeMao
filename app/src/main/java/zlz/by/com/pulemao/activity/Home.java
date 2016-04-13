@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import zlz.by.com.pulemao.R;
+import zlz.by.com.pulemao.util.DepthPageTransformer;
 import zlz.by.com.pulemao.util.SystemBarTintManager;
 
 /**
@@ -105,7 +106,7 @@ public class Home extends Activity {
 
          vp.setAdapter(pa);
 
-
+      vp.setPageTransformer(true,new DepthPageTransformer());
       vp.addOnPageChangeListener(new pagechange());
 
     }
