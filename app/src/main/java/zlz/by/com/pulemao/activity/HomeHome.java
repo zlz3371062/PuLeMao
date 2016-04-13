@@ -1,11 +1,8 @@
 package zlz.by.com.pulemao.activity;
 
 import android.content.Context;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ListView;
-
 import zlz.by.com.pulemao.R;
 import zlz.by.com.pulemao.util.HomeListAdapter;
 
